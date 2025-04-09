@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.conteudo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.textos {
+  width: 600px;
+}
+
+h2 {
+  font-size: 60px;
+  color: #333;
+  font-weight: bold;
+}
+
+span {
+  color: #00b96c;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #017143;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #62d464;
+}
+
+.imagem {
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 110px;
+}
+
+.imagem-copo {
+  width: 300px;
+  left: 10%;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  
+}
+
+.botao-menu {
+  width: 80px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.botao-menu:hover {
+  transform: translateY(-25px);
+}
+
+.circulo {
+  background: #017143;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  clip-path: circle(600px at right 800px);
+  z-index: -1;
+}
+
+/* Responsividade para telas pequenas (celular) */
+@media (max-width: 1000px) {
+  body {
+    padding: 10px;
+    overflow: auto;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textos {
+    width: 110%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  span {
+    font-size: 40px;
+  }
+
+  .imagem {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .imagem-copo {
+    width: 240px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .botao-menu {
+    width: 60px;
+  }
+
+  .circulo {
+    clip-path: circle(400px at right 700px);
+  }
+}
